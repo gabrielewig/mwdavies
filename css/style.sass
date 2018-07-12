@@ -1,0 +1,176 @@
+$var1: #20405f
+$var2: #132639
+$var3: #862d2d
+$var4: #5a5a5a
+$var5: #f2f2f2
+
+body a
+	color: @var1
+
+#about, #education, #projects, #contact
+	padding-left: 10%
+	padding-right: 10%
+	padding-top: 5%
+	padding-bottom: 5%
+	p
+		padding: 8%
+
+
+h1, h2
+	color: @var2
+	hr
+		width: 3rem
+		height: 2px
+		background-color: @var3
+		margin-top: 5px
+
+
+#head
+	background-image: url("..
+	background-color: @var4
+	background-position: top center
+	background-attachment: fixed
+	background-size: cover
+	height: 100vh
+	position: relative
+	overflow: hidden
+	.birds
+		height: 100%
+		width: 40%
+		min-width: 250px
+		max-width: 800px
+		background-image: url("..
+		background-repeat: no-repeat
+		background-position: top left
+		background-size: 80% auto
+		position: absolute
+		top: 10%
+		left: 5%
+
+	h1
+		text-shadow: 0.12rem 0.12rem rgba(0, 0, 0, 0.2)
+		text-align: center
+		position: absolute
+		top: 30vh
+		left: 50%
+		margin: 0vh
+		-webkit-transform: translate(-50%, 0)
+		transform: translate(-50%, 0)
+		hr
+			margin: auto
+			max-width: 600px
+			height: 3px
+			width: 65vw
+			-webkit-animation-duration: 2s
+			animation-duration: 2s
+			-webkit-animation-name: underline
+			animation-name: underline
+
+
+	.arrow
+		height: 60px
+		width: 50px
+		background-image: url("..
+		background-repeat: no-repeat
+		background-attachment: fixed
+		background-size: 40px 40px
+		background-position: center 98%
+		position: absolute
+		bottom: 0px
+		left: 50%
+		margin-left: -25px
+		&:hover
+			cursor: pointer
+
+
+
+-webkit-keyframes underline
+	width: 0vw
+
+to
+	width: 65vw
+
+keyframes underline
+	width: 0vw
+
+to
+	width: 65vw
+
+#about
+	background-color: @var5
+	h2
+		text-align: left
+		hr
+			margin-left: 0px
+
+
+
+#education
+	margin: 0px
+	background-image: url("..
+	background-color: @var4
+	background-position: top center
+	background-attachment: fixed
+	h2
+		text-align: right
+		padding-top: 10px
+		hr
+			margin-right: 0px
+
+
+	div
+		background-color: rgba(218, 218, 218, 0.7)
+
+
+#projects
+	background-color: @var5
+	h2
+		text-align: left
+		hr
+			margin-left: 0px
+
+
+	.card
+		max-width: 600px
+		margin: 0 auto
+
+	a
+		margin-top: 2rem
+
+
+#contact
+	background-color: @var4
+	background-position: bottom
+	h2
+		text-align: center
+		hr
+			width: 5rem
+
+
+	.btn-custom
+		color: @var3
+		background-color: white
+		position: absolute
+		left: 50%
+		-webkit-transform: translate(-50%, -40%)
+		transform: translate(-50%, -40%)
+		&:hover
+			background-color: @var2
+
+
+
+#foot
+	background-color: @var3
+	.col-xl
+		padding: 0.4rem
+
+	a, p
+		color: @var2
+		font-size: 1rem
+		margin: 0px
+
+	img
+		height: 1.5rem
+		width: auto
+		margin-left: .5rem
+		margin-right: .5rem
